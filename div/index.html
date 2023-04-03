@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+        @import url("//cdn.web-fonts.ge/fonts/bpg-glaho-arial/css/bpg-glaho-arial.min.css");
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .container {
+            width: 1200px;
+            height: 650px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;     
+            overflow-y: scroll;   
+            border-radius: 10px;        
+        }
+
+
+        .container::-webkit-scrollbar {
+            display: none   ;
+        }
+
+        .banner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(67 86 80);
+            margin: 50px;
+        }
+
+        .Heading_one {
+            font-size: 25px;
+        }
+
+        .Heading_second {
+            font-size: 25px;
+            transition: 0.5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-family: 'Roboto Condensed', sans-serif;
+
+        }
+
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 50px  30px 50px;
+        }       
+
+
+        video {
+            width: 300px;
+            height: 250px;
+        }
+
+        img {
+            width: 300px;
+            height: 225px;
+        }
+
+        .text {
+            width: 300px;
+            height: 250px;
+            background-color: rgb(67 86 80);;
+        }
+
+        .text p {
+            font-size: 16px;
+            text-align: start;
+            padding: 15px;
+            color: white;
+            font-family: "BPG Glaho Arial", sans-serif;
+        }
+
+        @media only screen and (max-width: 1005px) {
+            .content {
+                flex-direction: column;
+                gap: 25px;
+            }
+        }
+
+
+        @media only screen and (max-width: 750px) {
+            .Heading_second {
+                font-size: 15px;
+                transition: 0.5s;
+
+            }
+        }
+
+
+        @media only screen and (max-width: 455px) {
+            .Heading_second {
+                font-size: 10px;
+                transition: 0.5s;
+            }
+
+            .banner {
+                width: 100vw;
+                margin: 0;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <p class="Heading_one">ChatGPT</p>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body_1" width="94" height="96">
+                    <g transform="matrix(3 0 0 3 0 0)">
+                        <path d="M29.7 13.1C 30.1 12 30.2 10.900001 30.1 9.8C 30 8.7 29.6 7.6000004 29.1 6.6000004C 28.2 5.1000004 26.9 3.9000003 25.4 3.2000003C 23.8 2.5000002 22.1 2.3000002 20.4 2.7000003C 19.6 1.9000003 18.699999 1.2000003 17.699999 0.7000003C 16.699999 0.20000029 15.499999 2.9802322E-07 14.399999 2.9802322E-07C 12.699999 2.9802322E-07 10.999998 0.5000003 9.599998 1.5000002C 8.199999 2.5000002 7.1999984 3.9000003 6.6999984 5.5C 5.499998 5.8 4.499998 6.3 3.4999983 6.9C 2.5999985 7.6 1.8999983 8.5 1.2999983 9.4C 0.3999983 10.9 0.099998236 12.599999 0.29999828 14.299999C 0.49999833 15.999999 1.1999983 17.599998 2.2999983 18.9C 1.8999983 20 1.7999983 21.1 1.8999983 22.199999C 1.9999983 23.299997 2.3999982 24.4 2.8999982 25.4C 3.7999983 26.9 5.0999985 28.1 6.5999985 28.8C 8.199999 29.5 9.899999 29.699999 11.599998 29.3C 12.399999 30.099998 13.299998 30.8 14.299998 31.3C 15.299998 31.8 16.499998 32 17.599998 32C 19.3 32 20.999998 31.5 22.399998 30.5C 23.799997 29.5 24.799997 28.1 25.299997 26.5C 26.399998 26.3 27.499998 25.8 28.399998 25.1C 29.299997 24.400002 30.099998 23.6 30.599998 22.6C 31.499998 21.1 31.8 19.4 31.599998 17.7C 31.399998 16.000002 30.8 14.400001 29.699999 13.1L29.699999 13.1L29.7 13.1zM17.7 29.9C 16.1 29.9 14.900001 29.4 13.800001 28.5C 13.800001 28.5 13.900002 28.4 14.000001 28.4L14.000001 28.4L20.400002 24.699999C 20.600002 24.599998 20.7 24.499998 20.800001 24.3C 20.900002 24.1 20.900002 24 20.900002 23.8L20.900002 23.8L20.900002 14.799999L23.600002 16.4L23.600002 23.8C 23.700003 27.3 20.900002 29.9 17.700003 29.9zM4.800001 24.4C 4.1000013 23.199999 3.8000011 21.8 4.1000013 20.4C 4.1000013 20.4 4.2000012 20.5 4.300001 20.5L4.300001 20.5L10.700001 24.2C 10.900001 24.300001 11.000001 24.300001 11.200001 24.300001C 11.400001 24.300001 11.6 24.300001 11.700001 24.2L11.700001 24.2L19.5 19.7L19.5 22.800001L13 26.6C 11.6 27.4 10 27.6 8.5 27.2C 6.9 26.800001 5.6 25.800001 4.8 24.400002zM3.100001 10.5C 3.8000011 9.3 4.900001 8.4 6.200001 7.9L6.200001 7.9L6.200001 8.1L6.200001 15.5C 6.200001 15.7 6.200001 15.9 6.3000007 16C 6.4000006 16.2 6.5000005 16.3 6.700001 16.4L6.700001 16.4L14.500001 20.9L11.800001 22.5L5.400001 18.8C 4.000001 18 3.000001 16.699999 2.600001 15.199999C 2.2000012 13.699999 2.3000011 11.899999 3.100001 10.499999zM25.2 15.6L17.400002 11.1L20.100002 9.5L26.500002 13.2C 27.500002 13.8 28.300001 14.599999 28.800001 15.6C 29.300001 16.600002 29.6 17.7 29.500002 18.9C 29.400002 20 29.000002 21.1 28.300001 22C 27.6 22.9 26.7 23.6 25.6 24L25.6 24L25.6 16.4C 25.6 16.199999 25.6 16 25.5 15.9C 25.5 15.9 25.4 15.7 25.2 15.599999zM27.900002 11.6C 27.900002 11.6 27.800001 11.5 27.7 11.5L27.7 11.5L21.300001 7.8C 21.1 7.7000003 21.000002 7.7000003 20.800001 7.7000003C 20.6 7.7000003 20.400002 7.7000003 20.300001 7.8L20.300001 7.8L12.500001 12.3L12.500001 9.200001L19 5.4000006C 20 4.8000007 21.1 4.6000004 22.3 4.6000004C 23.4 4.6000004 24.5 5.0000005 25.5 5.7000003C 26.4 6.4 27.2 7.3 27.6 8.3C 28 9.3 28.1 10.5 27.9 11.6zM11.100002 17.2L8.4000025 15.6L8.4000025 8.1C 8.4000025 7.0000005 8.700003 5.8 9.300002 4.9000006C 9.9000025 3.9000006 10.800002 3.2000005 11.800002 2.7000005C 12.800002 2.2000005 14.000002 2.0000005 15.100002 2.2000005C 16.200003 2.3000004 17.300003 2.8000007 18.200003 3.5000005C 18.200003 3.5000005 18.100002 3.6000004 18.000002 3.6000004L18.000002 3.6000004L11.600002 7.3C 11.4000025 7.4 11.300002 7.5 11.200003 7.7000003C 11.100003 7.9000006 11.100002 8 11.100002 8.200001zM12.500002 14.000001L16.000002 12.000001L19.500002 14.000001L19.500002 18L16.000002 20L12.500002 18z" stroke="none" fill="#000000" fill-rule="nonzero" />
+                    </g>
+                </svg>
+            </div>
+            <p class="Heading_second">GPT-4, OpenAI-<span style='font-family: "BPG Glaho Arial", sans-serif;'>ის ყველაზე განვითარებული მოდელი</span></p>
+        </div>
+        <div class="content">
+            <div class="text">
+                <p>ჩვენ მოვამზადეთ მოდეი სახელწოდებით ChatGPT, რომელიც ურთიერთქმედებს სასაუბრო გზით. დიალოგის ფორმატი შესაძლებელს ხდის, რომ ChatGPT-იმ უპასუხოს კითხვებს, აღიაროს თავისი შეცდომები, უარყოს შეუსაბამო მოთხოვნები.</p>
+            </div>
+            <div>
+                <img src="https://openaicom.imgix.net/ced1351b-4ddb-4484-8646-da8bc571fd30/new-and-improved-embeddings-api.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=0%2C0%2C2048%2C2048&w=400">
+            </div>
+            <div  class="videoContainer">
+                <video src="./gpt-4-92586ac_1080p60.mp4" autoplay loop muted></video>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
