@@ -207,8 +207,3 @@ input {
 .chooseLang p {
     font-size: 15px;
 }
-
-
-@media only screen and (max-height: 400px) {
-
-}

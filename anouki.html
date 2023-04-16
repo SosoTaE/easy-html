@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<style>
+    body{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #DCD9D4;
+        background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+        background-blend-mode: soft-light,screen;
+        display: flex;
+    }
+    .container { 
+        margin: 50px;
+        border-radius: 15px;
+        height: 1000px;
+        background-color: #e0ffff;
+        width: 93%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;  
+        flex-direction: column; 
+    }
+    h1 {
+        padding-top: 20px;
+    }
+    hr {
+       width:50%;
+       text-align:center;
+       margin: center; 
+    }
+    .rectanglediv {
+        height: 400px;
+        justify-content: center;
+        width: 98%;
+        background-color: #DCD9D4;
+        background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+        background-blend-mode: soft-light,screen;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin: 15px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     
+    }
+    .firstinput {
+       margin:27px;
+       
+    }
+    .inputbox1 {
+        height: 200px;
+       width: 50%;
+       float: left;
+       background-color: transparent;
+    }
+    .inputbox2{
+        height: 200px;
+       width: 50%;
+       
+       float: right;
+       background-color: transparent;
+    }
+    .inputbox1, .inputbox2 {
+        margin-top: 5%;
+    }
+    .sizes{
+       width:  50%;
+    }
+    .secondinput {
+        
+        margin: 15px;
+    }
+     .inputbox2 input{
+        border: none;
+        background: none;
+        outline: none;
+        border-bottom: solid 1px black;
+    }
+    .inputbox3 {
+        height: 200px;
+       width: 50%;
+       float: left;
+       background-color: transparent;
+    }
+    .inputbox4 {
+        height: 200px;
+       width: 50%;
+       float: right;
+       background-color: transparent;
+       display: flex;
+       align-items: start;
+       flex-direction: column;
+    }
+    
+    .thirdinput {
+        margin-top: 30px;
+        
+    }
+    .fourthinput {
+     display: flex;
+     flex-direction: row;
+    }
+   textarea{
+    resize: none;
+    width: 400px;
+    height: 40%;
+   }
+   .options{
+    flex-direction: row;
+    display: flex;
+   }
+    </style>
+<body>
+    <div class="container">
+       <h1>საკონფერენციო რეგისტრაციის ფორმა</h1>
+       <hr>
+      <div class="rectanglediv">
+       <div class="inputbox1">
+            <input type="text" class="sizes firstinput"  placeholder="სახელი">  <br>
+            <input type="text" class="sizes firstinput"  placeholder="გვარი"> <br>
+            <input type="email" class="sizes firstinput"  placeholder="ელ ფოსტა"> <br>
+            <input type="password"  class="sizes firstinput" placeholder="პაროლი">
+                 </div> 
+      <div class="inputbox2"> 
+        <label for="text"> შეიყვანეთ თემის დასახელება</label> <br>
+        <input type="text" class="sizes secondinput "  >  <br>
+        <label for="text"> შეიყვანეთ თანაავტორები</label><br>
+        <input type="text" class="sizes secondinput "  > <br>
+        <label for="text"> შეიყვანეთ ტელეფონი</label><br>
+        <input type="text" class="sizes secondinput " > <br>
+        <label for="date"> აირჩიეთ თარიღი</label><br>
+        <input type="date" class="sizes secondinput " placeholder="mm/dd/yyyy">
+                 </div> 
+     </div>
+      
+      <div class="rectanglediv">
+        <div class="inputbox3">
+            <p class="thirdinput">ატვირთეთ ფაილი</p>
+            <input type="file" class="thirdinput"> 
+            <p class="thirdinput"> დაამატეთ ტექსტი </p>
+            <textarea class="thirdinput" placeholder="შეიყვანეთ ტექსტი" ></textarea>
+        </div>
+        <div class="inputbox4">
+            <h1 class="fourthinput" >აირჩიეთ სქესი </h1>
+            <div class="options">
+                <input type="checkbox" class="fourthinput">
+                <label class="fourthinput" >მდედრობითი</label>
+            </div>
+           <div class="options">
+            <input type="checkbox" class="fourthinput">
+          <label class="fourthinput">მამრობითი</label>
+            </div>
+            <h1 class="fourthinput" >პრეზენტაციის ენა </h1>
+          <div class="options">
+            <input type="checkbox" class="fourthinput">
+           <label class="fourthinput">ინგლისური</label>
+           </div>
+         <div class="options">  
+             <input type="checkbox" class="fourthinput">
+          <label class="fourthinput">ქართული</label>
+          </div>
+          <div class="options">  
+            <input type="checkbox" class="fourthinput">
+               <label class="fourthinput">სხვა</label>
+            </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
