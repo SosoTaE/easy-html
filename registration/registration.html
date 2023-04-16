@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <p>საკონფერენციო რეგისტრაციის ფორმა</p>
+    </div>
+    <div class="container">
+        <div class="first">
+            <input type="text" placeholder="სახელი">
+            <input type="text" placeholder="გვარი">
+            <input type="email" placeholder="ელ ფოსტა">
+            <input type="password" placeholder="პაროლი">
+        </div>
+        <div class="second">
+           <form class="inputsContainer">
+            <div class="inputContainer">
+                <input type="text">
+                <label class="labelForInput">შეიყვანეთ თემის დასახელება</label>
+            </div>
+            <div class="inputContainer">
+                <input type="text">
+                <label class="labelForInput">შეიყვანეთ თანაავტორები</label>
+            </div>
+            <div class="inputContainer">
+                <input type="email">
+                <label class="labelForInput">შეიყვანეთ ტელეფონი</label>
+            </div>
+            <div class="inputContainer">
+                <input type="date">
+                <label class="labelForInput">აირჩიეთ თარიღი</label>
+            </div>
+           </form>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="First">
+            <div class="FirstDiv">
+                <div class="fileInput">
+                    <label>ატვირთეთ ფაილი</label>
+                    <input type="file" accept=".pdf,.doc,.docx">
+                </div>
+                <div class="TextAreaDiv">
+                    <label>ატვირთეთ ფაილი</label>
+                    <textarea placeholder="შეიყვანეთ ტექსტი"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="Second">
+            <p class="inputsTitle">აირჩიეთ სქესი</p>        
+            <div class="genderDiv">
+                <div class="gender">
+                    <input type="radio">
+                    <p>მამრობითი</p>
+                </div>
+                <div class="gender">
+                    <input type="radio">
+                    <p>მდედრობითი</p>
+                </div>
+            </div> 
+            <p class="inputsTitle">პრეზენტაციის ენა</p>
+            <div class="">
+                <div class="chooseLang">
+                    <input type="checkbox">
+                    <p>ქართული</p>
+                </div>
+                <div class="chooseLang">
+                    <input type="checkbox">
+                    <p>ინგლისური</p>
+                </div>
+                <div class="chooseLang">
+                    <input type="checkbox">
+                    <p>სხვა</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
