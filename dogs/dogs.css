@@ -1,0 +1,379 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;   */
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.item {
+    display:  flex;
+    flex-direction: row;
+    color: blueviolet;
+
+}
+
+.navbarItemsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    position: relative;
+    top: 18px;
+    
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: row;
+    font-weight: lighter;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+}
+
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(186, 51, 96);
+    padding: 5px;
+
+}
+
+
+.inputSearch {
+    width: 350px;
+    padding: 15px;
+    background-color: rgb(6, 157, 216);
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+
+.button {
+    width: 70px;
+    height: 30px;
+    background-color: rgb(186, 51, 96);
+    border-radius: 10px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -80px;
+}
+
+.categoryContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+}
+
+.categoryContainer p {
+    font-weight: lighter;
+}
+
+.categoriesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 70px;
+    height: 100px;
+    border: 2px solid palevioletred;
+    border-radius: 10px;
+}
+
+.categoryImgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    transition: 0.1s ease-in-out;
+}
+
+.categoryImgContainer:hover {
+    width: 110px;
+    height: 170px;
+    border: 2px solid palevioletred;
+    border-radius: 10px;
+    /* transition: 0.2s ease-in; */
+}
+
+.categoryImgContainer:hover p {
+    display: block;
+}
+
+.categoryImgContainer img {
+    width: 100px;
+    height: 100px;
+}
+
+
+.categoryImgContainer p {
+    display: none;
+    color: blueviolet;
+}
+
+.nextButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 1000px;
+    box-shadow: rgba(100, 100, 111,  0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blueviolet;
+    margin-left: -26px;
+    background-color: white;
+    user-select: none;
+    cursor: pointer;
+}
+
+.categorymainCointainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1000px;
+    justify-content: center;
+}
+
+.firstContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    gap: 25px;
+}
+
+
+.aboutHarnessesImgContainer img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.aboutHarnesses {
+    width: 650px;
+    height: 280px;
+    border: 2px solid palevioletred;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.header p {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.end a {
+    text-decoration: underline;
+    color: #d69637;
+}
+
+
+.questionsContainer {
+    width: 250px;
+    height: 300px;
+    border: 2px solid palevioletred;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.mainQuestion {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+
+.mainQuestion p {
+    color: palevioletred;
+}
+
+.mainQuestion img {
+    width: 50px;
+    height: 50px;
+
+}
+
+.answersContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.answers p {
+    margin: 5px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.topicContainer {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    width: 1000px;
+    justify-content: space-between;
+}
+
+.answers p {
+    color: palevioletred;
+}
+
+
+@media only screen and (max-width: 1050px) {
+    .topicContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* width: 100%; */
+        margin-top: 50px;
+        gap: 25px;
+    }
+
+    .questionsContainer {
+        width: 650px;
+        height: 300px;
+        border: 2px solid palevioletred;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        padding: 20px;
+        gap: 20px;
+    }
+  }
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.dogsContainer {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.first {
+    max-width: 300px;
+    height: 350px;
+    border: 2px solid palevioletred;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.imageContainer img {
+    width: 300px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.viewMoreContainer {
+    width: 100%;
+    display: flex;
+    align-items: start;
+}
+
+.viewMoreContainer a {
+    text-decoration: underline;
+    color: palevioletred;
+}
+
+
+.containerfordogsContainer {
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+    
+}
+
+.a {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.headers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+}
+
+.viewAllContainer a {
+    text-decoration: underline;
+    color: palevioletred;
+}
+
+
+table {
+    width: 1000px;
+    
+}
